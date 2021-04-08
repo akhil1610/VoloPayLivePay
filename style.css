@@ -136,11 +136,11 @@
         }
 
         .item-bg3 {
-            background-image: url(../images/grp.jpg);
+            background-image: url(./../images/grp.jpg);
         }
 
         .item-bg5 {
-            background-image: url(../images/camara.jpg);
+            background-image: url(./../images/camara.jpg);
         }
 
         .item-bg6 {
