@@ -106,32 +106,6 @@
         /* Grid systems */
 
         
-
-        @media (min-width:240px){
-            .grid-container{
-                display: block;
-            }
-            .container-main {
-                margin: 0;
-            }
-            .margin-item{
-                margin-bottom:15px;
-            }
-        }
-
-        @media (min-width:1060px){
-            .grid-container{
-                display: grid;
-                margin-bottom:0;
-            }
-            .container-main {
-                margin: 4% 12% 12% 12%;
-            }
-            .margin-item{
-                margin-bottom:0;
-            }
-        }
-
         .grid-container {
             grid-template-columns: 25% 25% 25% 25%;
             grid-gap: 6px;
@@ -275,5 +249,31 @@
             50% {
                 opacity: 0;
                 transform: (0.7) translateY(10px);
+            }
+        }
+        
+
+        @media (min-width:240px){
+            .grid-container{
+                display: block;
+            }
+            .container-main {
+                margin: 0;
+            }
+            .margin-item{
+                margin-bottom:15px;
+            }
+        }
+
+        @media (min-width:1060px){
+            .grid-container{
+                display: grid;
+                margin-bottom:0;
+            }
+            .container-main {
+                margin: 4% 12% 12% 12%;
+            }
+            .margin-item{
+                margin-bottom:0;
             }
         }
