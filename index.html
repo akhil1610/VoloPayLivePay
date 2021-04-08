@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link
         href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap"
@@ -13,135 +12,132 @@
     <title>TestImageDesign</title>
     <style>
         /* universal */
+        * {
+            margin: 0px;
+            border: 0px;
+            padding: 0px;
+        }
+        body {
+            background-color: #3f406c;
+            font-family: Poppins, Helvetica, sans-serif
+        }
 
-* {
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
-}
+        /* progress dots in navbar */
+        .loading .load {
+            top: 8px;
+            left: 11px;
+            position: relative;
+            width: 8px;
+            height: 8px;
+            margin: 0 2px;
+            background-color: #FAFEFD;
+            border-radius: 50%;
+            display: inline-block;
+            animation-name: dots;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
 
-body {
-    background-color: #3f406c;
-    font-family: Poppins,Helvetica,sans-serif
-}
+        .loading .load:nth-child(2) {
+            background-color: #FAFEFD;
+            animation-delay: 0.4s;
+        }
 
-/* progress dots in navbar */
+        .loading .load:nth-child(3) {
+            background-color: #FAFEFD;
+            animation-delay: 0.8s;
+        }
 
-.loading .load {
-    top: 8px;
-    left: 11px;
-    position: relative;
-    width: 8px;
-    height: 8px;
-    margin: 0 2px;
-    background-color: #FAFEFD;
-    border-radius: 50%;
-    display: inline-block;
-    animation-name: dots;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
+        /* end of progress */
 
-.loading .load:nth-child(2) {
-    background-color: #FAFEFD;
-    animation-delay: 0.4s;
-}
+        /* Navigantion bar */
 
-.loading .load:nth-child(3) {
-    background-color: #FAFEFD;
-    animation-delay: 0.8s;
-}
+        .nav {
+            height: 35px;
+            width: auto;
+            background-color: #52557e;
+        }
 
-/* end of progress */
+        .bg-color {
+            background-color: #52557e;
+        }
 
-/* Navigantion bar */
+        .search {
+            display: inline;
+            float: right;
+            background-color: #5a5f89;
+            height: 35px;
+            width: 300px;
+        }
 
-.nav {
-    height: 35px;
-    width: auto;
-    background-color: #52557e;
-}
+        .search::placeholder {
+            color: #9195b8;
+            margin-right: 20px;
+            padding-left: 20px;
+            font-size: x-small;
+        }
 
-.bg-color {
-    background-color: #52557e;
-}
+        ::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #9195b8;
+            opacity: 1;
+            /* Firefox */
+        }
 
-.search {
-    display: inline;
-    float: right;
-    background-color: #5a5f89;
-    height: 35px;
-    width: 300px;
-}
+        :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #9195b8;
+        }
 
-.search::placeholder {
-    color: #9195b8;
-    margin-right: 20px;
-    padding-left: 20px;
-    font-size: x-small;
-}
+        ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: #9195b8;
+        }
 
-::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #9195b8;
-    opacity: 1;
-    /* Firefox */
-}
+        .btn {
+            float: right;
+            width: 35px;
+            height: 35px;
+            background-color: #a88cd9;
+            color: #FAFEFD;
+        }
 
-:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: #9195b8;
-}
+        .bang {
+            position: absolute;
+            color: #d7d9ea;
+            font-size: 13px;
+            font-weight: bold;
+            padding-top: 10px;
+            padding-left: 13px;
+            margin-left: 10px;
+        }
 
-::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: #9195b8;
-}
+        /* end of nav bar */
 
-.btn {
-    float: right;
-    width: 35px;
-    height: 35px;
-    background-color: #a88cd9;
-    color: #FAFEFD;
-}
+        /* Grid systems */
 
-.bang {
-    position: absolute;
-    color: #d7d9ea;
-    font-size: 13px;
-    font-weight: bold;
-    padding-top: 10px;
-    padding-left: 13px;
-    margin-left: 10px;
-}
+        .container-main {
+            margin: 4% 12% 12% 12%;
+        }
 
-/* end of nav bar */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-gap: 6px;
+            background-color: transparent;
+            padding: 10px;
+        }
 
-/* Grid systems */
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 0;
+            font-size: 30px;
+        }
 
-.container-main {
-    margin: 4% 12% 12% 12%;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-gap: 6px;
-    background-color: transparent;
-    padding: 10px;
-}
-
-.grid-container>div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 0;
-    font-size: 30px;
-}
-
-/* slider */
-/* .slider:active,
+        /* slider */
+        /* .slider:active,
 .slider:hover{
     transform: translateY(-80px);
     transition: 2s;
@@ -153,110 +149,127 @@ body {
  .slider{
     transition: 2s;
 } */
-/* slider end */
+        /* slider end */
 
-.item-bg{
-    padding: 95px 0;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
-}
+        .item-bg {
+            padding: 95px 0;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: cover;
+        }
 
-.item-bg1 {
-    background-image: url(opp.jpg);
-}
-.item-bg2 {
-    background-image: url(pc.png);  
-}
-.item-bg3 {
-    background-image: url(grp.jpg);
-}
+        .item-bg1 {
+            background-image: url(opp.jpg);
+        }
 
-.item-bg5 {
-    background-image: url(camara.jpg);
-}
-.item-bg6 {
-    background-image: url(light.png);
-}
-.item-bg7 {
-    background-image: url(ddc.jpeg);    
-}
-.item-bg8 {
-    background-image: url(ddc.jpeg);
-    
-}
-.item-bg9 {
-    background-image: url(man.jpg);    
-}
-.item-bg10 {
-    background-image: url(stat.png); 
-}
+        .item-bg2 {
+            background-image: url(pc.png);
+        }
 
-.item1 {
-    grid-column: 1 / span 2;
-}
+        .item-bg3 {
+            background-image: url(grp.jpg);
+        }
 
-.bg-purple{
-    background-color: #5a5f89 !important;
-}
+        .item-bg5 {
+            background-image: url(camara.jpg);
+        }
 
-.item10 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-}
+        .item-bg6 {
+            background-image: url(light.png);
+        }
 
-.card-des{
-    font-size: 16px;
-    padding: 17px 24px 20px 30px;
+        .item-bg7 {
+            background-image: url(ddc.jpeg);
+        }
 
-    text-align: left;
-    background-color: #5a5f89;
-    color: #fbfcff;
-}
-.btn-mp{
-    background-color: #aa8ed9;
-    color: #fbfcff;
-    padding: 9px;
-}
-.itm4-loading{
-    padding: 19px 0px 27px 0px;
-}
-.itm4-cont{
-    width: 134px;
-    line-height: 37px !important;
-    font-size: 30px;
-}
-.dum-cont{
-    font-size: x-small;
-    margin: 8px 0;
-}
-.d-flex{
-    display: flex;
-}
-.mr-12{
-    margin-right:12px;
-}
-.fs-xs{
-    font-size: x-small;
-}
-.mt-10{
-    margin-top: 10px;
-}
-h2{
-    font-weight: 600 !important;
-    margin-bottom: 0;
-    line-height: 30px !important;
-}
-/* end of grid systems*/
+        .item-bg8 {
+            background-image: url(ddc.jpeg);
 
-/* media Querry */
+        }
 
-@keyframes dots {
-    50% {
-        opacity: 0;
-        transform: (0.7) translateY(10px);
-    }
-}
+        .item-bg9 {
+            background-image: url(man.jpg);
+        }
+
+        .item-bg10 {
+            background-image: url(stat.png);
+        }
+
+        .item1 {
+            grid-column: 1 / span 2;
+        }
+
+        .bg-purple {
+            background-color: #5a5f89 !important;
+        }
+
+        .item10 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+
+        .card-des {
+            font-size: 16px;
+            padding: 17px 24px 20px 30px;
+
+            text-align: left;
+            background-color: #5a5f89;
+            color: #fbfcff;
+        }
+
+        .btn-mp {
+            background-color: #aa8ed9;
+            color: #fbfcff;
+            padding: 9px;
+        }
+
+        .itm4-loading {
+            padding: 19px 0px 27px 0px;
+        }
+
+        .itm4-cont {
+            width: 134px;
+            line-height: 37px !important;
+            font-size: 30px;
+        }
+
+        .dum-cont {
+            font-size: x-small;
+            margin: 8px 0;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .mr-12 {
+            margin-right: 12px;
+        }
+
+        .fs-xs {
+            font-size: x-small;
+        }
+
+        .mt-10 {
+            margin-top: 10px;
+        }
+
+        h2 {
+            font-weight: 600 !important;
+            margin-bottom: 0;
+            line-height: 30px !important;
+        }
+
+        /* end of grid systems*/
+
+        /* media Querry */
+
+        @keyframes dots {
+            50% {
+                opacity: 0;
+                transform: (0.7) translateY(10px);
+            }
+        }
     </style>
 </head>
 
@@ -286,7 +299,7 @@ h2{
                         the art of data driven product development through AB testing and a focus on the right
                         metrics
                         to optimize driven product development through AB testing and a focus on the right metrics
-                        to  to optimize driven product development through AB testing and a focus on the right
+                        to to optimize driven product development through AB testing and a focus on the right
                         optimize.</p>
                     <div class="d-flex">
                         <div class="mr-12">
@@ -304,7 +317,7 @@ h2{
                 <div class="item item-bg2 item-bg"></div>
                 <div class="card-des slider">
                     <li style="list-style-type: circle;">Library Update</li>
-                    <h2>Leveraging Social Proof for</h2>
+                    <h2>Leveraging Social Proof for Growth</h2>
                     <p class="dum-cont"> Duolingo removes language barriers by connecting people that need websites
                         translated with
                         students that are learning a language. Through trial and error the team at Duolingo has
@@ -316,7 +329,7 @@ h2{
                         </div>
                         <div class="mr-12">
                             <i class="far fa-clock fa-xs"></i>
-                            <span class="fs-xs">Today</span>
+                            <span class="fs-xs">2 days ago</span>
                         </div>
                     </div>
                 </div>
@@ -324,8 +337,8 @@ h2{
             <div class="item3 item bg-purple">
                 <div class="item item-bg3 item-bg"></div>
                 <div class="card-des slider">
-                    <li style="list-style-type: circle;">Library Update</li>
-                    <h2>Leveraging Social Proof for</h2>
+                    <li style="list-style-type: circle;">Culture and Team</li>
+                    <h2>Leveraging Social Proof for Growth</h2>
                     <p class="dum-cont"> Duolingo removes language barriers by connecting people that need websites
                         translated with
                         students that are learning a language. Through trial and error the team at Duolingo has
@@ -337,7 +350,7 @@ h2{
                         </div>
                         <div class="mr-12">
                             <i class="far fa-clock fa-xs"></i>
-                            <span class="fs-xs">Today</span>
+                            <span class="fs-xs">2 days ago</span>
                         </div>
                     </div>
                 </div>
@@ -357,8 +370,8 @@ h2{
             <div class="item5 item bg-purple">
                 <div class="item item-bg5 item-bg"></div>
                 <div class="card-des slider">
-                    <li style="list-style-type: circle;">Library Update</li>
-                    <h2>Leveraging Social Proof for</h2>
+                    <li style="list-style-type: circle;">Culture and Team</li>
+                    <h2>Leveraging Social Proof for Growth</h2>
                     <p class="dum-cont"> Duolingo removes language barriers by connecting people that need websites
                         translated with
                         students that are learning a language. Through trial and error the team at Duolingo has
@@ -370,7 +383,7 @@ h2{
                         </div>
                         <div class="mr-12">
                             <i class="far fa-clock fa-xs"></i>
-                            <span class="fs-xs">Today</span>
+                            <span class="fs-xs">2 days ago</span>
                         </div>
                     </div>
                 </div>
@@ -378,8 +391,8 @@ h2{
             <div class="item6 item bg-purple">
                 <div class="item item-bg6 item-bg"></div>
                 <div class="card-des slider">
-                    <li style="list-style-type: circle;">Library Update</li>
-                    <h2>Leveraging Social Proof for</h2>
+                    <li style="list-style-type: circle;">Product Launch</li>
+                    <h2>Leveraging Social Proof for Growth</h2>
                     <p class="dum-cont"> Duolingo removes language barriers by connecting people that need websites
                         translated with
                         students that are learning a language. Through trial and error the team at Duolingo has
@@ -391,7 +404,7 @@ h2{
                         </div>
                         <div class="mr-12">
                             <i class="far fa-clock fa-xs"></i>
-                            <span class="fs-xs">Today</span>
+                            <span class="fs-xs">2 days ago</span>
                         </div>
                     </div>
                 </div>
@@ -399,8 +412,8 @@ h2{
             <div class="item7 item bg-purple">
                 <div class="item item-bg7 item-bg"></div>
                 <div class="card-des slider">
-                    <li style="list-style-type: circle;">Library Update</li>
-                    <h2>Leveraging Social Proof for</h2>
+                    <li style="list-style-type: circle;">ddc</li>
+                    <h2>Leveraging Social Proof for Growth</h2>
                     <p class="dum-cont"> Duolingo removes language barriers by connecting people that need websites
                         translated with
                         students that are learning a language. Through trial and error the team at Duolingo has
@@ -412,7 +425,7 @@ h2{
                         </div>
                         <div class="mr-12">
                             <i class="far fa-clock fa-xs"></i>
-                            <span class="fs-xs">Today</span>
+                            <span class="fs-xs">2 days ago</span>
                         </div>
                     </div>
                 </div>
@@ -420,8 +433,8 @@ h2{
             <div class="item8 item bg-purple">
                 <div class="item item-bg8 item-bg"></div>
                 <div class="card-des slider">
-                    <li style="list-style-type: circle;">Library Update</li>
-                    <h2>Leveraging Social Proof for</h2>
+                    <li style="list-style-type: circle;">ddc</li>
+                    <h2>Leveraging Social Proof for Growth</h2>
                     <p class="dum-cont"> Duolingo removes language barriers by connecting people that need websites
                         translated with
                         students that are learning a language. Through trial and error the team at Duolingo has
@@ -433,7 +446,7 @@ h2{
                         </div>
                         <div class="mr-12">
                             <i class="far fa-clock fa-xs"></i>
-                            <span class="fs-xs">Today</span>
+                            <span class="fs-xs">2 days ago</span>
                         </div>
                     </div>
                 </div>
@@ -441,8 +454,8 @@ h2{
             <div class="item9 item bg-purple">
                 <div class="item item-bg9 item-bg"></div>
                 <div class="card-des slider">
-                    <li style="list-style-type: circle;">Library Update</li>
-                    <h2>Leveraging Social Proof for</h2>
+                    <li style="list-style-type: circle;">Culture and Team</li>
+                    <h2>Leveraging Social Proof for Growth</h2>
                     <p class="dum-cont"> Duolingo removes language barriers by connecting people that need websites
                         translated with
                         students that are learning a language. Through trial and error the team at Duolingo has
@@ -454,7 +467,7 @@ h2{
                         </div>
                         <div class="mr-12">
                             <i class="far fa-clock fa-xs"></i>
-                            <span class="fs-xs">Today</span>
+                            <span class="fs-xs">2 days ago</span>
                         </div>
                     </div>
                 </div>
@@ -462,7 +475,7 @@ h2{
             <div class="item10 item bg-purple">
                 <div class="item item-bg10 item-bg"></div>
                 <div class="card-des slider">
-                    <li style="list-style-type: circle;">Library Update</li>
+                    <li style="list-style-type: circle;">Trends</li>
                     <h2>Leveraging Social Proof for <br>Growth</h2>
                     <p class="dum-cont"> Duolingo removes language barriers by connecting people that need websites
                         translated with
@@ -470,7 +483,8 @@ h2{
                         mastered
                         the art of data driven product development through AB testing and a focus on the right
                         metrics
-                        to optimize driven product development through AB testing and a focus on the right  to optimize driven product development through AB testing and a focus on the right metrics
+                        to optimize driven product development through AB testing and a focus on the right to optimize
+                        driven product development through AB testing and a focus on the right metrics
                         to
                         optimize.</p>
                     <div class="d-flex">
