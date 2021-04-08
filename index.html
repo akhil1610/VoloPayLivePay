@@ -117,12 +117,34 @@
 
         /* Grid systems */
 
-        .container-main {
-            margin: 4% 12% 12% 12%;
+        
+
+        @media (min-width:240px){
+            .grid-container{
+                display: block;
+            }
+            .container-main {
+                margin: 0;
+            }
+            .margin-item{
+                margin-bottom:15px;
+            }
+        }
+
+        @media (min-width:1060px){
+            .grid-container{
+                display: grid;
+                margin-bottom:0;
+            }
+            .container-main {
+                margin: 4% 12% 12% 12%;
+            }
+            .margin-item{
+                margin-bottom:0;
+            }
         }
 
         .grid-container {
-            display: grid;
             grid-template-columns: 25% 25% 25% 25%;
             grid-gap: 6px;
             background-color: transparent;
@@ -224,14 +246,26 @@
         }
 
         .d-flex {
+            -webkit-display: flex;
+            -moz-display: flex;
+            -o-display: flex;
+            -ms-display: flex;
             display: flex;
         }
 
         .mr-12 {
+            -webkit-margin-right: 12px;
+            -moz-margin-right: 12px;
+            -o-margin-right: 12px;
+            -ms-margin-right: 12px;
             margin-right: 12px;
         }
 
         .fs-xs {
+            -webkit-font-size: x-small;
+            -moz-font-size: x-small;
+            -o-font-size: x-small;
+            -ms-font-size: x-small;
             font-size: x-small;
         }
 
@@ -270,9 +304,8 @@
         </div>
     </div>
     <div class="container-main">
-        <div class="grid-container">
-
-            <div class="item1 bg-purple">
+        <div class="grid-container" id="appendData">
+            <div class="item1 bg-purple margin-item">
                 <div class="item item-bg1 item-bg"></div>
                 <div class="card-des slider">
                     <li style="list-style-type: circle;">Library Update</li>
@@ -298,7 +331,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item2 bg-purple">
+            <div class="item2 bg-purple margin-item">
                 <div class="item item-bg2 item-bg"></div>
                 <div class="card-des slider">
                     <li style="list-style-type: circle;">Library Update</li>
@@ -319,7 +352,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item3 item bg-purple">
+            <div class="item3 item bg-purple margin-item">
                 <div class="item item-bg3 item-bg"></div>
                 <div class="card-des slider">
                     <li style="list-style-type: circle;">Culture and Team</li>
@@ -340,7 +373,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item4 item bg-purple">
+            <div class="item4 item bg-purple margin-item">
                 <div class="item item-bg4"></div>
                 <div class="card-des ">
                     <div class="loading itm4-loading">
@@ -352,7 +385,7 @@
                         <button class="btn-mp mt-10">Try Mixpanel today</button>
                 </div>
             </div>
-            <div class="item5 item bg-purple">
+            <div class="item5 item bg-purple margin-item">
                 <div class="item item-bg5 item-bg"></div>
                 <div class="card-des slider">
                     <li style="list-style-type: circle;">Culture and Team</li>
@@ -373,7 +406,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item6 item bg-purple">
+            <div class="item6 item bg-purple margin-item">
                 <div class="item item-bg6 item-bg"></div>
                 <div class="card-des slider">
                     <li style="list-style-type: circle;">Product Launch</li>
@@ -394,7 +427,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item7 item bg-purple">
+            <div class="item7 item bg-purple margin-item">
                 <div class="item item-bg7 item-bg"></div>
                 <div class="card-des slider">
                     <li style="list-style-type: circle;">ddc</li>
@@ -415,7 +448,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item8 item bg-purple">
+            <div class="item8 item bg-purple margin-item">
                 <div class="item item-bg8 item-bg"></div>
                 <div class="card-des slider">
                     <li style="list-style-type: circle;">ddc</li>
@@ -436,7 +469,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item9 item bg-purple">
+            <div class="item9 item bg-purple margin-item">
                 <div class="item item-bg9 item-bg"></div>
                 <div class="card-des slider">
                     <li style="list-style-type: circle;">Culture and Team</li>
@@ -457,7 +490,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item10 item bg-purple">
+            <div class="item10 item bg-purple margin-item">
                 <div class="item item-bg10 item-bg"></div>
                 <div class="card-des slider">
                     <li style="list-style-type: circle;">Trends</li>
