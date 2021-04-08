@@ -128,40 +128,40 @@
         }
 
         .item-bg1 {
-            background-image: url('../assets/pc.png');
+            background-image: url(../images/pc.png);
         }
 
         .item-bg2 {
-            background-image: url'../assets/pc.png');
+            background-image: url(../images/pc.png);
         }
 
         .item-bg3 {
-            background-image: url(/assets/grp.jpg);
+            background-image: url(../images/grp.jpg);
         }
 
         .item-bg5 {
-            background-image: url(/assets/camara.jpg);
+            background-image: url(../images/camara.jpg);
         }
 
         .item-bg6 {
-            background-image: url(/assets/light.png);
+            background-image: url(../imageslight.png);
         }
 
         .item-bg7 {
-            background-image: url(/assets/ddc.jpeg);
+            background-image: url(../images/ddc.jpeg);
         }
 
         .item-bg8 {
-            background-image: url(/assets/ddc.jpeg);
+            background-image: url(../images/ddc.jpeg);
 
         }
 
         .item-bg9 {
-            background-image: url(/assets/man.jpg);
+            background-image: url(../images/man.jpg);
         }
 
         .item-bg10 {
-            background-image: url(/assets/stat.png);
+            background-image: url(../images/stat.png);
         }
 
         .item1 {
