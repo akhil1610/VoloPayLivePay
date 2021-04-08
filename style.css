@@ -128,11 +128,11 @@
         }
 
         .item-bg1 {
-            background-image: url('/../opp.jpg');
+            background-image: url('../assets/pc.png');
         }
 
         .item-bg2 {
-            background-image: url('/../pc.png');
+            background-image: url'../assets/pc.png');
         }
 
         .item-bg3 {
