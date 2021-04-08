@@ -132,7 +132,7 @@
         }
 
         .item-bg2 {
-            background-image: url(/assets/pc.png);
+            background-image: url(./assets/pc.png));
         }
 
         .item-bg3 {
